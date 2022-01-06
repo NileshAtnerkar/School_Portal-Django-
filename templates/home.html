@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'one.css'%}">
+    <style>*
+{
+margin:0px
+}
+header
+{
+height:150px;
+background-color:white;
+color:white;
+}
+footer
+{
+height:20px;
+background-color:white;
+color:blue;
+}
+
+ul li
+{
+display:inline-block;;
+margin-right:20px;
+}
+ul li a
+{
+color:black
+}
+section
+{ height:410px;
+background-color:green;
+color:red;
+}
+</style>
+</head>
+<body>
+<header>
+
+    <br>
+    <h1 style="color:Blue">&#160 <img src="{% static 'sc.png'%}" width="65" height="65">&#160 Nirmala High School, Kapustalni Anjangaon Surji -444705</h1>
+   <br> <ul>
+        <li><a href="/home"><h2>Home</h2></a> </li>
+    <li><a href="gallery"><h2>Gallery</h2></a></li>
+    <li><a href="contact"><h2>Contact</h2></a></li>
+    <li><a href="about"><h2>About</h2></a></li>
+    <li><a href="noti"><h2>Notification</h2></a></li>
+           <li><button type="submit"><a href="signin"><h2>SignIn</h2></a></button></li>
+         <li><button type="submit"><a href="signup"><h2 >SignUp</h2></a></button></li>
+
+
+    </ul>
+    <marquee><h2  style="color:red">Admissions are opened hurry up !!</h2></marquee>
+     <marquee direction="right"><h2  style="color:red">Admissions are opened hurry up !!</h2></marquee>
+</header>
+<section>
+<img src="{% static 'nir.jpeg'%}" width="1280" height="420">
+</section>
+
+<footer><br>
+    <h3>
+        <center>@Created by Nilesh</center></h3>
+</footer>
+</body>
+</html>

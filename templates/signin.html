@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="submit"> <a href="home">Home</a></button>
+ <h3 style="color:orange">Log In to your account!</h3>
+    <form method="post" action="/signin" class="mb-2">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your Username" Required><br><br>
+        </div>
+        <div class="form-group">
+            <label for="pass1">Password:</label>
+            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Enter Your Password" Required><br><br>
+        </div>
+
+        <button type="submit" class="btn btn-primary"><a href="signhome">Log In</a></button>
+
+</form>
+
+</body>
+</html>
